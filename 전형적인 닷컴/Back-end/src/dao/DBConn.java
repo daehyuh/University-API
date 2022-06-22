@@ -13,7 +13,7 @@ public class DBConn {
 	public DBConn() {
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String user = "hanseok";
+		String user = "system";
 		String password = "1234";
 		
 		try{

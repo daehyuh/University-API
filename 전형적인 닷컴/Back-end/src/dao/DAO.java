@@ -17,16 +17,15 @@ public class DAO {
 	
 	public static Entity MemberSelectById(String id) {
 		DBConn dbcon = new DBConn();
-		
 		Entity entity = new Entity();
 		
-		String sql = "SELECT * FROM UNI_MEMBER WHERE  UM_ID = '"+entity.getUM_ID()+"'";
-		
+		String sql = "SELECT * FROM UNI_MEMBER WHERE UM_ID = '"+ id +"'";
 		try {
 			dbcon.rs = dbcon.stmt.executeQuery(sql);
 			
 			if(dbcon.rs.next()){
 				entity = new Entity (dbcon.rs.getString(1), dbcon.rs.getString(2), dbcon.rs.getString(3), dbcon.rs.getString(4), dbcon.rs.getString(5));
+				System.out.println(entity.getUM_PASSWORD());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
