@@ -58,13 +58,9 @@ header .inner-wrap {
 }
 
 header .logo {
-    position: absolute;
-    left: 48%;
-    top: 45px;
+    float: left;
     width: 168px;
     height: 27px;
-    margin: 0 0 0 -600px;
-    padding: 0;
 }
 
 header .logo a{
@@ -96,9 +92,7 @@ header .util .login a:hover {
 }
 
 header .menu {
-    
-    overflow: hidden;
-    margin: 0 0 0 420px;
+    text-align: center;
     padding: 65px 0 0 0;
 }
 
@@ -111,9 +105,10 @@ header .menu li:first-of-type {
 }
 
 header .menu li{
-    float: left;
+    display:inline-block;
     margin: 0 0 0 85px;
     padding: 0;
+
 }
 
 header .menu a{
@@ -259,19 +254,16 @@ section{
     background-color: #2775c4;
 }
 
-.login-box .content-area .write-form .link {
-    position: absolute;
-    bottom: -30px;
-    right: 220px;
-    text-align: center;
+.login-box .content-area .link {
+    text-align: left;
 }
 
-.login-box .content-area .write-form .link a:first-child {
+.login-box .content-area .link a:first-child {
     margin-left: 0;
     padding-left: 0;
 }
 
-.login-box .content-area .write-form .link a {
+.login-box .content-area .link a {
     position: relative;
     color: #333;
     text-decoration: none;
