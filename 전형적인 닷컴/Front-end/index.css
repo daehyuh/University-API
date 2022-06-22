@@ -8,9 +8,10 @@ body {
     font-size: 14px;
     line-height: 1.6;
     color: #333;
+    background-color: #FFFFFF;
     letter-spacing: 0;
     font-weight: normal;
-    font-family: 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 h2.tit {
@@ -42,7 +43,8 @@ header {
     position: relative;
     height: 130px;
     color: #fff;
-    background: linear-gradient(#0b70b9 ,navy); 
+    /* background: linear-gradient(#0b70b9 ,navy);  */
+    background-color: #004b8d;
 }
 
 
@@ -51,7 +53,8 @@ header {
     position: relative;
     height: 12  0px;
     color: #fff;
-    background: linear-gradient(#0b70b9 , #2775c4); 
+    /* background: linear-gradient(#0b70b9 , #2775c4);  */
+    background-color: #004b8d;
 }
 header .inner-wrap {
     padding: 0;
@@ -93,7 +96,7 @@ header .util .login a:hover {
 
 header .menu {
     text-align: center;
-    padding: 65px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 ul{
@@ -124,34 +127,10 @@ header .menu a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section{
-    height: 1000px;
+    width: 1300px;
+    height: auto;
     margin: auto;
-    background-color: #fff;
 }
 
 .container {
