@@ -2,7 +2,7 @@ function fn_login(){
     const form = document.loginForm;
 
     const um_id = form.um_id.value;
-    const um_password = form.um_password.value;
+    const um_password = form.um_pwd.value;
 
     if(um_id == "" || um_id == null || um_password == "" || um_password == null){
         document.getElementById("warning").style.display="block";
@@ -14,7 +14,7 @@ function fn_login(){
 
 function btn_cancel(){
     if(confirm("회원 가입을 취소하고 메인화면으로 돌아가시겠습니까?")){
-        location.replace("index.html");
+        location.replace("index.jsp");
     }
 }
 

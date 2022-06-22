@@ -234,6 +234,8 @@ section{
 }
 
 .login-box .content-area .link {
+    margin-top: 10px;
+    margin-left: 2px;
     text-align: left;
 }
 
