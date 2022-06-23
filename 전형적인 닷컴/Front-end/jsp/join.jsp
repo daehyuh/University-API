@@ -22,8 +22,8 @@
 			if (session.getAttribute("LOGIN") != null) {
 			%>
 			<script type="text/javascript">
-				alert("잘못된 접근입니다 로그인페이지로 이동합니다");
-				location.href = "../jsp/login.jsp";
+				alert("잘못된 접근입니다 메인페이지로 이동합니다");
+				location.href = "../jsp/index.jsp";
 			</script>
 			<%
 				} else {
