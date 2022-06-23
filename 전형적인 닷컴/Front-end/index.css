@@ -8,10 +8,9 @@ body {
     font-size: 14px;
     line-height: 1.6;
     color: #333;
-    background-color: #FFFFFF;
     letter-spacing: 0;
     font-weight: normal;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
 }
 
 h2.tit {
@@ -43,8 +42,7 @@ header {
     position: relative;
     height: 130px;
     color: #fff;
-    /* background: linear-gradient(#0b70b9 ,navy);  */
-    background-color: #004b8d;
+    background: linear-gradient(#0b70b9 ,navy); 
 }
 
 
@@ -53,8 +51,7 @@ header {
     position: relative;
     height: 12  0px;
     color: #fff;
-    /* background: linear-gradient(#0b70b9 , #2775c4);  */
-    background-color: #004b8d;
+    background: linear-gradient(#0b70b9 , #2775c4); 
 }
 header .inner-wrap {
     padding: 0;
@@ -96,7 +93,7 @@ header .util .login a:hover {
 
 header .menu {
     text-align: center;
-    padding: 50px 0 0 0;
+    padding: 65px 0 0 0;
 }
 
 ul{
@@ -127,10 +124,34 @@ header .menu a:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section{
-    width: 1300px;
-    height: auto;
+    height: 1100px;
     margin: auto;
+    background-color: #fff;
 }
 
 .container {
@@ -257,6 +278,10 @@ section{
 
 .input-util {
     padding: 5px 10px 0 10px;
+}
+
+.input-util .input-warning {
+    color: #e15d05;
 }
 
 .in .input-util .input-warning {
@@ -524,4 +549,197 @@ tr {
 .row-table .input-util .input-warning {
     float: left;
     color: #c24e01;
+}
+
+
+
+
+
+
+/* API 신청 페이지 */
+
+.api-container {
+    min-height: 100%;
+    height: auto;
+    margin: -120px 0 -340px 0;
+    padding: 160px 0 100px 0;
+}
+.api-container #contents {
+    margin: auto;   
+    width: calc(100% - 600px);
+}
+
+#api-div .title-area {
+    overflow: hidden;
+    padding: 0;
+}
+
+#api-div .title-area .apt-tit {
+    float: left;
+}
+
+#api-div .apt-tit {
+    margin: 0;
+    padding: 0 0 30px 0;
+    color: #333;
+    font-size: 1.7143em;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.data-set-title {
+    position: relative;
+    padding: 19px 270px 16px 19px;
+    border: 1px solid #e0e0e0;
+    border-top: 3px solid #4a63a6;
+    min-height: 150px;
+}
+
+.data-set-title .tit-area {
+    position: relative;
+    padding: 0;
+}
+
+.data-set-title .tit-area .tit {
+    display: inline-block;
+    margin-top: 5px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 1.4286em;
+    letter-spacing: -0.05em;
+    vertical-align: middle;
+}
+
+.dataset-table{
+    border: 0.5px solid #e0e0e0;
+    margin-top: 20px !important;
+}
+
+.dataset-table .bg-blue {
+    background-color: #70aeff60;
+}
+
+.dataset-table .tr {
+    width: 100%;
+    min-height: 100%;
+    border: none;
+}
+
+.dataset-table .th {
+    display: table-cell;
+    width: 200px;
+    padding: 11px 12px;
+    color: #333;
+    font-weight: 700;
+    text-align: left;
+    border: none;
+}
+
+.dataset-table .td {
+    position: relative;
+    display: table-cell;
+    width: calc(100% - 180px);
+    padding: 11px 12px;
+    background: white;
+    border: none;
+}
+
+.ceil-border-right-and-bottom{
+    border-right: 0.5px solid #343b443a !important;
+    border-bottom: 0.5px solid #343b443a !important;
+}
+
+.api-tit-group{
+    margin-top: 40px;
+}
+
+.api-tit-group h3.tit {
+    padding: 0px 0px 20px 0px;
+}
+
+.apt-table {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+.label-group {
+    display: block;
+    vertical-align: top;
+}
+
+.label-group .col {
+    display: inline-block;
+    margin: 5px 20px 5px 0;
+    vertical-align: top;
+}
+
+.api-row-table {
+    border-top: 2px solid #555;
+    margin-bottom: 20px;
+}
+
+.api-row-table table th, .api-row-table table td {
+    height: 100px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #e0e0e0;
+    border-width: 0 0 1px 0;
+}
+
+.api-row-table table th {
+    text-align: center;
+    padding: 70px 12px 0px 10px;
+    background-color: #fff;
+    font-weight: bold;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+
+.api-row-table table td {
+    padding: 70px 10px 10px 220px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.tech-table{
+    border-top: 2px solid #555;
+}
+
+.api-tech-table{
+    width: 100%;
+    margin: 0;
+    border: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+.tech-table table thead tr th, .tech-table table tbody tr td {
+    border: 1px solid #e0e0e0;
+    border-width: 0 1px 1px 0;
+}
+
+.tech-table table thead tr th {
+    height: 45px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.tech-table table thead tr th, .tech-table table tbody tr td, .tech-table table tbody tr{
+    height: 45px;
+    padding: 2px 10px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+
+.mt5 {
+    margin-top: 5px !important;
 }

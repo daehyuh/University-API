@@ -12,8 +12,8 @@ function fn_login(){
 }
 
 
-function btn_cancel(){
-    if(confirm("회원 가입을 취소하고 메인화면으로 돌아가시겠습니까?")){
+function btn_cancel(obj){
+    if(confirm(obj + "을 취소하고 메인화면으로 돌아가시겠습니까?")){
         location.replace("index.html");
     }
 }
@@ -78,5 +78,42 @@ function pwcheck(obj){
         document.getElementById("pwcheck_warning").style.display="block";
     } else{
         document.getElementById("pwcheck_warning").style.display="none";
+    }
+}
+
+function api_save(){
+
+    const form = document.apiForm;
+
+    const apiTechChk = form.apiTechChk.checked;
+    const licenseChk = form.licenseChk.checked;
+
+    if(apiTechChk == false || licenseChk == false){
+
+        if( apiTechChk == false ){
+            document.getElementById("tech_warning").style.display="block";
+        }  
+        if( licenseChk == false ){
+            document.getElementById("license_warning").style.display="block";
+        }
+
+    }
+     else{
+        alert("API 신청 완료");
+        form.submit();
+    }
+    
+}
+
+function api_checkbox(obj, keyCode){
+    if(obj.checked == false && keyCode == 1){
+        document.getElementById("tech_warning").style.display="block";
+    } else{
+        document.getElementById("tech_warning").style.display="none";
+    }
+    if(obj.checked == false && keyCode == 2){
+        document.getElementById("license_warning").style.display="block";
+    } else{
+        document.getElementById("license_warning").style.display="none";
     }
 }
