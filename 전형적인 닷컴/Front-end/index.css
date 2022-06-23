@@ -74,7 +74,7 @@ header .logo a{
 
 header .util {
     position: absolute;
-    left: 55%;
+    left: 67%;
     top: 0;
     width: 600px;
     padding: 22px 0 0 0;
@@ -234,6 +234,8 @@ section{
 }
 
 .login-box .content-area .link {
+    margin-top: 10px;
+    margin-left: 2px;
     text-align: left;
 }
 
@@ -525,3 +527,20 @@ tr {
     float: left;
     color: #c24e01;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
