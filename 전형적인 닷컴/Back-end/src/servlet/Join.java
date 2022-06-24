@@ -50,7 +50,7 @@ public class Join extends HttpServlet {
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
 			out.println("alert('회원가입 성공.');");
-			out.println("location.href='/';"); // 로케이션처리
+			out.println("location.href='../jsp/index.jsp';"); // 로케이션처리
 			out.println("</script>");
 			out.close();
 		} catch (Exception e) {

@@ -52,7 +52,7 @@ public class ApiKeyMake extends HttpServlet {
 			PrintWriter out = response.getWriter();
 			out.print("<script>");
 			out.print("alert('인증키가 생성됬습니다.');");
-			out.print("location.href='/;"); // 로케이션 처리
+			out.print("location.href='../jsp/apiKeyCheck.jsp';"); // 로케이션 처리
 			out.print("</script>");
 			out.close();
 		} catch(Exception e){
@@ -64,7 +64,7 @@ public class ApiKeyMake extends HttpServlet {
 			out.print("<script>");
 			out.print("alert('인증키를 생성하는데 오류가 발생했습니다.');");
 			//out.print("alert('메인페이지로 이동합니다.');"); // 원하는 방식으로 처리
-			out.print("location.href='/';"); // 로케이션 처리
+			out.print("location.href='../jsp/index.jsp';"); // 로케이션 처리
 			out.print("</script>");
 			out.close();	
 		}

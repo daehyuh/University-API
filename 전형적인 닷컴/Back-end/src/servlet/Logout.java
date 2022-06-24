@@ -1,31 +1,26 @@
 package servlet;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import dao.DAO;
-import entity.Entity;
+import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class ApiKeySelect
+ * Servlet implementation class LOGOUT
  */
-@WebServlet("/ApiKeySelect")
-public class ApiKeySelect extends HttpServlet {
+@WebServlet("/Logout")
+public class Logout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+    private String path = this.getClass().getSimpleName();
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ApiKeySelect() {
+    public Logout() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,20 +29,17 @@ public class ApiKeySelect extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
-		
-		String id = request.getParameter("um_id");
-				
-		List<Entity> ApiList = new ArrayList<Entity>();
-		ApiList = DAO.UUIDSelect(id);
-		
-		request.setAttribute("apikey", ApiList);
-		
-		ServletContext context = getServletContext();
-		RequestDispatcher dispatcher = context.getRequestDispatcher("../jsp/index.jsp"); // 디스패쳐 처리
-		dispatcher.forward(request, response);
+		HttpSession session = request.getSession();
+		session.invalidate();
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		out.println("<script>");
+		out.println("alert('로그아웃 되었습니다.');");
+		out.println("location.href='../jsp/index.jsp';");
+		out.println("</script>");
 	}
-
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

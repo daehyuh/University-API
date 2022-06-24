@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.DAO;
 
@@ -39,18 +40,21 @@ public class Update extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		
-		String id = request.getParameter("um_id");
-		String pw = request.getParameter("um_password");
-		String name = request.getParameter("um_name");
+		String id = request.getParameter("update_id");
+		String pw = request.getParameter("update_pw");
+		String name = request.getParameter("update_name");
 		
 		try{
 			DAO.MemberUpdate(id, pw, name);
+			HttpSession session = request.getSession();
+			session.invalidate();
 			response.setCharacterEncoding("UTF-8");
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
-			out.println("alert('수정완료 성공.');");
-			out.println("location.href='/'"); // 로케이션 처리
+			out.println("alert('회원정보가 수정되었습니다.');");
+			out.println("alert('다시 로그인해주시기 바랍니다.');");
+			out.println("location.href='../jsp/index.jsp'"); // 로케이션 처리
 			out.println("</script>");
 			out.close();
 		} catch(Exception e){

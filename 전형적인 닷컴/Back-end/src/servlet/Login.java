@@ -46,6 +46,7 @@ public class Login extends HttpServlet {
 		String id = request.getParameter("um_id");
 		String pwd = request.getParameter("um_pwd");
 		
+		
 		Entity entity =  DAO.MemberSelectById(id);
 		try {
 
@@ -60,7 +61,7 @@ public class Login extends HttpServlet {
 					
 					ServletContext context = getServletContext();
 					RequestDispatcher dispatcher = context
-							.getRequestDispatcher("/"); // 디스패쳐 처리
+							.getRequestDispatcher("/jsp/index.jsp"); // 디스패쳐 처리
 					dispatcher.forward(request, response);
 				} else { // 패스워드 틀림					
 					msgPrint(request, response, "err");
@@ -77,7 +78,7 @@ public class Login extends HttpServlet {
 		String msgPrint = "";
 
 		if (msg.equals("err")) {
-			msgPrint = "alert('아이디 또는 패스워드를 잘못입력하였습니다.');location.href='/';"; // 로케이션 처리
+			msgPrint = "alert('아이디 또는 패스워드를 잘못입력하였습니다.');location.href='../jsp/index.jsp';"; // 로케이션 처리
 		} else {
 			msgPrint = "alert('로그인 성공');";
 		}

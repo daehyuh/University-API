@@ -40,7 +40,7 @@ public class UniversityList extends HttpServlet {
 		request.setAttribute("university", UniList);
 		
 		ServletContext context = getServletContext();
-		RequestDispatcher dispatcher = context.getRequestDispatcher("/"); // 디스패쳐 처리
+		RequestDispatcher dispatcher = context.getRequestDispatcher("../jsp/index.jsp"); // 디스패쳐 처리
 		dispatcher.forward(request, response);
 	}
 
