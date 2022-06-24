@@ -38,7 +38,7 @@ public class DAO {
 			dbcon.rs = dbcon.stmt.executeQuery(sql);
 			
 			if(dbcon.rs.next()){
-				entity = new Entity (dbcon.rs.getString(1), dbcon.rs.getString(2), dbcon.rs.getString(3), dbcon.rs.getString(4), dbcon.rs.getString(5));
+				entity = new Entity (dbcon.rs.getString(1), dbcon.rs.getString(2), dbcon.rs.getString(3), dbcon.rs.getString(4), dbcon.rs.getString(5), dbcon.rs.getString(6));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
