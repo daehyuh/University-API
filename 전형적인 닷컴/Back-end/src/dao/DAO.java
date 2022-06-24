@@ -55,7 +55,7 @@ public class DAO {
 		DBConn dbcon = new DBConn();
 		Entity entity = new Entity(id, pwd, name);
 		
-		String sql = "UPDATE UNI_MEMBER SET UM_PASSWORD = '"+entity.getUM_PASSWORD()+"', UM_NAME = '"+entity.getUM_NAME()+"' WHERE UM_ID = '"+entity.getUM_ID()+"'";
+		String sql = "UPDATE UNI_MEMBER SET UM_PASSWORD = '"+entity.getUM_PASSWORD()+"', UM_NAME = '"+entity.getUM_NAME()+"', UM_APIKEY = 'null', UM_KEYDATE = 'null' WHERE UM_ID = '"+entity.getUM_ID()+"'";
 		
 		try{
 			dbcon.stmt.executeUpdate(sql);
@@ -73,7 +73,7 @@ public class DAO {
 		
 		Entity entity = new Entity(id, uuid);
 	
-		String sql = "UPDATE UNI_MEMBER SET UM_APIKEY = '"+entity.getUM_APIKEY()+"' WHERE UM_ID = '"+entity.getUM_ID()+"'";
+		String sql = "UPDATE UNI_MEMBER SET UM_APIKEY = '"+entity.getUM_APIKEY()+"', UM_KEYDATE = SYSDATE WHERE UM_ID = '"+entity.getUM_ID()+"'";
 		
 		try{ 
 			dbcon.stmt.executeUpdate(sql);
@@ -93,7 +93,7 @@ public class DAO {
 
 		List<Entity> list = new ArrayList<Entity>();
 
-		String sql = "SELECT UM_APIKEY FROM UNI_MEMBER WHERE UM_ID = '"+id+"'";
+		String sql = "SELECT UM_APIKEY, UM_KEYDATE FROM UNI_MEMBER WHERE UM_ID = '"+id+"'";
 
 		try {
 
