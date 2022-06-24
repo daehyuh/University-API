@@ -9,6 +9,7 @@ public class Entity {
 	String UM_NAME;
 	String UM_DATE;
 	String UM_APIKEY;
+	String UM_KEYDATE;
 	
 	// 대학
 	
@@ -65,13 +66,14 @@ public class Entity {
 	}
 
 	public Entity(String uM_ID, String uM_PASSWORD, String uM_NAME,
-			String uM_DATE, String uM_APIKEY) {
+			String uM_DATE, String uM_APIKEY, String uM_KEYDATE) {
 		super();
 		UM_ID = uM_ID;
 		UM_PASSWORD = uM_PASSWORD;
 		UM_NAME = uM_NAME;
 		UM_DATE = uM_DATE;
 		UM_APIKEY = uM_APIKEY;
+		UM_KEYDATE = uM_KEYDATE;
 	}
 	public Entity(String uM_ID, String uM_APIKEY) {
 		super();
@@ -125,6 +127,15 @@ public class Entity {
 	}
 	public void setUM_APIKEY(String uM_APIKEY) {
 		UM_APIKEY = uM_APIKEY;
+	}
+	/*
+	 * 멤버 KEYDATE
+	 * */
+	public String getUM_KEYDATE() {
+		return UM_KEYDATE;
+	}
+	public void setUM_KEYDATE(String uM_KEYDATE) {
+		UM_KEYDATE = uM_KEYDATE;
 	}
 	
 	// 대학교
