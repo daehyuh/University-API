@@ -14,7 +14,7 @@
 	<header>
 	<div class="inner-wrap">
 		<div class="logo">
-			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png" width="300px" height="70px"></a>
+			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png"></a>
 		</div>
 		<%
 			Entity login = null;
@@ -75,11 +75,12 @@
 									<div class="input-wrap">
 										<input class="input-text" id="um_id" name="um_id"
 											title="아이디 입력" placeholder="아이디 입력" type="text"
-											maxlength="20"> <input class="input-text" id="um_pwd"
-											name="um_pwd" title="비밀번호 입력" placeholder="비밀번호 입력"
-											type="password" maxlength="20">
+											maxlength="20"> 
+										<input class="input-text" id="um_pwd" name="um_pwd" 
+											title="비밀번호 입력" placeholder="비밀번호 입력" type="password" 
+											maxlength="20">
 									</div>
-									<button type="submit" class="btn-login" onclick="fn_login()">로그인</button>
+									<button type="button" class="btn-login" onclick="fn_login()">로그인</button>
 								</div>
 								<div class="link">
 									<a href="javascript:location.href='join.jsp';">회원가입</a>
