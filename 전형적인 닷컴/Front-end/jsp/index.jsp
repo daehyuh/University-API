@@ -15,7 +15,7 @@
 	<header>
 	<div class="inner-wrap">
 		<div class="logo">
-			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png" width="300px" height="70px"></a>
+			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png"></a>
 		</div>
 		<%
 			Entity login = (Entity) session.getAttribute("LOGIN");
