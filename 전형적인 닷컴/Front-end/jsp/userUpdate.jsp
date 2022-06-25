@@ -18,7 +18,7 @@
 	<header>
 		<div class="inner-wrap">
 		<div class="logo">
-			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png" width="300px" height="70px"></a>
+			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png"></a>
 		</div>
 			<%
 				Entity login = null;
@@ -52,7 +52,7 @@
 				<li><a href="../jsp/index.jsp">전형적인 API</a></li>
 				<li><a href="../jsp/apiDetail.jsp">전형적인 API 데이터 상세</a></li>
 				<li><a href="../jsp/apisigin.jsp">API 인증키 신청</a></li>
-				<li><a href="../jsp/apiKeyCheck.html">인증키 확인</a></li>
+				<li><a href="../jsp/apiKeyCheck.jsp">인증키 확인</a></li>
 			</ul>
 
 		</div>
@@ -107,10 +107,10 @@
 							<tbody>
 
 								<tr>
-									<th scope="row"><label for="update_pw" class="label">새
+									<th scope="row"><label for="update_pwd" class="label">새
 											비밀번호</label></th>
-									<td><input onchange="check(this, 8, 2)" id="update_pw"
-										name="update_pw" title="새 비밀번호 입력" class="input-text w340px"
+									<td><input onchange="check(this, 8, 2)" id="update_pwd"
+										name="update_pwd" title="새 비밀번호 입력" class="input-text w340px"
 										type="password" maxlength="20">
 										<div class="input-util">
 											<p class="input-reference">8 ~ 20자 이내 비밀번호 입력</p>
@@ -121,7 +121,7 @@
 								<tr>
 									<th scope="row"><label for="update_pwchk" class="label">비밀번호
 											확인</label></th>
-									<td><input onchange="pwcheck(this, 'update_pw')"
+									<td><input onchange="pwcheck(this, 'update_pwd')"
 										id="update_pwchk" name="update_pwchk" title="비밀번호 확인"
 										class="input-text w340px" type="password" maxlength="20">
 										<div class="input-util">
