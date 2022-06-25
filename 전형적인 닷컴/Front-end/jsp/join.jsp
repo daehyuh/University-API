@@ -14,7 +14,7 @@
 	<header>
 		<div class="inner-wrap">
 		<div class="logo">
-			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png" width="300px" height="70px"></a>
+			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png"></a>
 		</div>
 			<%
 				Entity login = null;
@@ -99,8 +99,8 @@
 										<th scope="row">비밀번호</th>
 										<td>
 											<div class="input-btn-type-word-5 w460px">
-												<input onchange="check(this, 8, 2)" id="um_password"
-													name="um_password" title="비밀번호 입력"
+												<input onchange="check(this, 8, 2)" id="um_pwd"
+													name="um_pwd" title="비밀번호 입력"
 													class="input-text w340px" type="password" maxlength="20">
 												<div class="input-util">
 													<p class="input-reference">8 ~ 20자 이내 비밀번호 입력</p>
@@ -114,7 +114,7 @@
 										<th scope="row">비밀번호 확인</th>
 										<td>
 											<div class="input-btn-type-word-5 w460px">
-												<input onchange="pwcheck(this, 'um_password')"
+												<input onchange="pwcheck(this, 'um_pwd')"
 													id="um_password_check" name="um_password_check"
 													title="비밀번호 확인 입력" class="input-text w340px"
 													type="password" maxlength="20">
@@ -144,7 +144,7 @@
 							</table>
 						</div>
 						<div class="btn-group">
-							<button type="button" class="button navy" onclick="btn_cancel()">취소</button>
+							<button type="button" class="button navy" onclick="btn_cancel('회원가입')">취소</button>
 							<button type="button" class="button" onclick="btn_save()">회원
 								가입</button>
 						</div>
