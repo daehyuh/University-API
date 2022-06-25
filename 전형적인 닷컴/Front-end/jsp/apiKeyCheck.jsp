@@ -15,7 +15,7 @@
 	<header>
 		<div class="inner-wrap">
 		<div class="logo">
-			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png" width="300px" height="70px"></a>
+			<a href="../jsp/index.jsp" title="홈페이지 바로가기"><img alt="" src="../image/image.png"></a>
 		</div>
 			<%
 				Entity login = null;
@@ -49,7 +49,7 @@
 				<li><a href="../jsp/index.jsp">전형적인 API</a></li>
 				<li><a href="../jsp/apiDetail.jsp">전형적인 API 데이터 상세</a></li>
 				<li><a href="../jsp/apisigin.jsp">API 인증키 신청</a></li>
-				<li><a href="../jsp/apiKeyCheck.html">인증키 확인</a></li>
+				<li><a href="../jsp/apiKeyCheck.jsp">인증키 확인</a></li>
 			</ul>
 
 		</div>
