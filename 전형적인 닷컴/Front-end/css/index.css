@@ -14,6 +14,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+
 h2.tit {
     display: inline;
     margin-left: 130px;
@@ -91,17 +92,24 @@ header .util .login a {
     text-decoration: none;
     color: ghostwhite;
 }
+#active{
+    color: ghostwhite;
+	font-size: 25px;
+    font-weight: bold;
+}
+
 
 header .util .login a:hover {
     text-decoration: underline;
-    
+    font-size: 25px;
+    font-weight: bold;
 }
 
 header .menu {
 	display: flex;
     text-align: center;
     justify-content: center;
-    padding: 50px 0 0 0px;
+    padding: 40px 0 0 0px;
 }
 
 ul{
@@ -128,7 +136,11 @@ header .menu a{
 
 header .menu a:hover{
     color: slategrey;
+    font-size: 25px;
+    font-weight: bold;
 }
+
+
 
 
 
@@ -136,6 +148,7 @@ section{
     width: 1300px;
     height: auto;
     margin: auto;
+    min-height: 1000px;
 }
 
 .container {
@@ -275,14 +288,6 @@ section{
 }
 
 
-footer{
-    overflow: hidden;
-    position: relative;
-    height: 251px;
-    background-color: ghostwhite;
-    border-top: 1px solid #e6e6e6;
-    border-bottom: 2px solid #422222;
-}
 
 
 
@@ -537,4 +542,17 @@ tr {
 .row-table .input-util .input-warning {
     float: left;
     color: #c24e01;
+}
+
+footer{
+	position: relative;
+    height: 130px;
+    color: #fff;
+    /* background: linear-gradient(#0b70b9 ,navy); */
+    background-color: #004b8d;
+}
+footer h1{
+line-height: 100px;
+width:750px;
+margin: auto;
 }

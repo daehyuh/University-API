@@ -12,7 +12,7 @@
 
 .APITITLE-small{
     font-size: 14px;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     color: #666;
     text-align: center;
 }
@@ -81,7 +81,7 @@ p {
 
 .step_box {margin:0 20px;overflow:hidden;}
 .step_box li {float:left;width:18%;margin:0 1%;height: 400px;}
-.step_box li .step_sub {height: 300px;border:solid 1px #e1e1e1;min-height:242px;padding:10%;}
+.step_box li .step_sub {height: 300px;border:solid 1px #e1e1e1;background-position: center;min-height:242px;padding:10%;}
 .step_box li .step_sub .step_tit {background-image:url('../image/circle.png');background-repeat:no-repeat;background-size:100% 100%;text-align:center;color:#fff;font-weight:600;font-size:30px;padding:40% 0;margin-bottom:30px;}
 .step_box li .step_sub .step_txt {text-align:center;margin-bottom:10px;}
 .step_box li .step_sub .step_txt span {font-weight:600;color:#0053a0;font-size:16px;display:block;margin-bottom:10px;}

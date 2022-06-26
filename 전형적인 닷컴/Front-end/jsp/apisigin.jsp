@@ -49,7 +49,7 @@
 			<ul class="menu">
 				<li><a href="../jsp/index.jsp">전형적인 API</a></li>
 				<li><a href="../jsp/apiDetail.jsp">전형적인 API 데이터 상세</a></li>
-				<li><a href="../jsp/apisigin.jsp">API 인증키 신청</a></li>
+				<li><a id="active" href="../jsp/apisigin.jsp">API 인증키 신청</a></li>
 				<li><a href="../jsp/apiKeyCheck.jsp">인증키 확인</a></li>
 				<li><a href="./homepage/index.jsp">API 활용 예시</a></li>
 			</ul>
@@ -208,5 +208,9 @@
 			</div>
 		</div>
 	</section>
+		<footer>
+			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
+			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
+	</footer>
 </body>
 </html>

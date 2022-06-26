@@ -30,7 +30,7 @@
 
 		<div class="util">
 			<div class="login">
-				<a href="../jsp/login.jsp" title="로그인 이동">로그인</a>
+				<a id="active" href="../jsp/login.jsp" title="로그인 이동">로그인</a>
 				<a href="../jsp/join.jsp" title="회원가입 이동">회원가입</a>
 			</div>
 		</div>
@@ -99,18 +99,8 @@
 	</div>
 	</section>
 	<footer>
-	<div class="inner-wrap">
-		<div class="footer-util">
-			<div class="tel"></div>
-			<div class="sns-share">
-				<a href="https://hanyang.sen.hs.kr/" target="_blank" title="새창 열기">
-					<i class="iconset ico-hanyang">한양공고 홈페이지</i>
-				</a>
-			</div>
-		</div>
-		<div class="footer-link"></div>
-		<div class="footer-info"></div>
-	</div>
+			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
+			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
 	</footer>
 </body>
 </html>

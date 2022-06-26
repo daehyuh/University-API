@@ -6,6 +6,7 @@ CREATE TABLE uni_type(
   ,uni_recruitment           VARCHAR2(100) NOT NULL
   ,uni_department            VARCHAR2(100) NOT NULL
   ,uni_type_selection        VARCHAR2(100) NOT NULL
+  
   ,uni_type_name             VARCHAR2(100) NOT NULL
   ,uni_type_number           NUMBER(4,0)
   ,uni_2022_competition_rate NUMBER(4,2)

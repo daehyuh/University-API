@@ -8,10 +8,49 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>전형적인 닷컴</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="../../css/index.css">
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../css/detail.css">
 <link rel="stylesheet" href="../../css/homepage.css">
+    <script>
+$.ajaxSetup({
+    scriptCharset: "utf-8",
+    contentType: "application/json; charset=utf-8"
+});
+  
+  $(
+  function(){
+            $.ajax({
+            method: 'GET',                             
+            url: 'http://124.49.255.184:8000/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
+            dataType: 'json'                             
+        }).done(function (data) {
+            console.log(entry['카운트']);
+        var table="<colgroup><col><col><col><col><col><col><col><col><col style='width: 150px;'><col></colgroup><tbody><tr><th scope='row'>번호</th><th scope='row'>지역</th><th scope='row'>모집시기</th><th scope='row'>대학이름</th><th scope='row'>본교/분교</th><th scope='row'>학과</th><th scope='row'>종합교과</th><th scope='row'>전형유형</th><th scope='row'>전형명</th><th scope='row'>2023년도 모집인원</th><th scope='row'>분석</th></tr>";
+        $.each(data, function(index, entry){
+         table+='<tr>';
+         table+='<td>'+entry['카운트']+'</td>';
+         table+='<td>'+entry['지역']+'</td>';
+         table+='<td>'+entry['모집시기']+'</td>';
+         table+='<td>'+entry['대학교']+'</td>';
+         table+='<td>'+entry['본분교']+'</td>';
+         table+='<td>'+entry['학과']+'</td>';
+         table+='<td>'+entry['종합교과']+'</td>';
+         table+='<td>'+entry['전형유형']+" "+entry['전형명']+'</td>';
+         table+='<td>'+entry['전형명']+'</td>';
+         table+='<td>'+entry['모집인원']+"명"+'</td>';
+         table+='<td>'+'<a href="subUnliSelect.jsp?count='+entry['카운트']+'>분석</a>'+'</td>';
+//         table+='<td>'+entry['2022학년도 경쟁률']+'</td>';
+//         table+='<td>'+entry['2022학년도 평균등급']+'</td>';
+         table+='</tr>';
+        });
+        table+='</tbody>';
+        $('.detail-table').append(table);
+    });
+  }
+  );
+    </script>
 </head>
 <body>
 	<header>
@@ -65,65 +104,16 @@
 				</h2>
 			</div>
 		<table class="detail-table">
-				<colgroup>
-	           		<col>
-	           		<col>
-	           		<col>
-	           		<col>
-	           		<col>
-	           		<col>
-	           		<col>
-	           		<col>
-	            	<col style="width: 150px;">
-	           		<col>
-		        </colgroup>
-				<tbody>
-					<tr>						
-						<th scope="row">번호</th>
-						<th scope="row">지역</th>
-						<th scope="row">모집시기</th>
-						<th scope="row">대학이름</th>
-						<th scope="row">본교/분교</th>
-						<th scope="row">학과</th>
-						<th scope="row">전형유형</th>
-						<th scope="row">전형세부</th>
-						<th scope="row">전형명</th>
-						<th scope="row">2023년도 모집인원</th>
-						<th scope="row">분석</th>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>서울</td>
-						<td>수시</td>
-						<td>건국대학교</td>
-						<td>본교</td>
-						<td>스마트ICT융합공학과</td>
-						<td>학생부위주</td>
-						<td>교과</td>
-						<td>KU지역균형</td>
-						<td>4</td>
-						<td>
-							<button type="button" title="분석" onclick="javascript:location.href='#'">분석</button>
-						</td>
-					</tr>
-				</tbody>
+
+
+		        
 			</table>
 		</div>
 	</div>
 	</section>
 	<footer>
-	<div class="inner-wrap">
-		<div class="footer-util">
-			<div class="tel"></div>
-			<div class="sns-share">
-				<a href="https://hanyang.sen.hs.kr/" target="_blank" title="새창 열기">
-					<i class="iconset ico-hanyang">한양공고 홈페이지</i>
-				</a>
-			</div>
-		</div>
-		<div class="footer-link"></div>
-		<div class="footer-info"></div>
-	</div>
+			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
+			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
 	</footer>
 </body>
 </html>

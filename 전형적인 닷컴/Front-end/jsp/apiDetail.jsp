@@ -46,7 +46,7 @@
 
 		<ul class="menu">
 			<li><a href="../jsp/index.jsp">전형적인 API</a></li>
-			<li><a href="../jsp/apiDetail.jsp">전형적인 API 데이터 상세</a></li>
+			<li><a id="active" href="../jsp/apiDetail.jsp">전형적인 API 데이터 상세</a></li>
 			<li><a href="../jsp/apisigin.jsp">API 인증키 신청</a></li>
 			<li><a href="../jsp/apiKeyCheck.jsp">인증키 확인</a></li>
 			<li><a href="./homepage/index.jsp">API 활용 예시</a></li>
@@ -148,18 +148,8 @@
     	</table>
 	</section>
 	<footer>
-	<div class="inner-wrap">
-		<div class="footer-util">
-			<div class="tel"></div>
-			<div class="sns-share">
-				<a href="https://hanyang.sen.hs.kr/" target="_blank" title="새창 열기">
-					<i class="iconset ico-hanyang">한양공고 홈페이지</i>
-				</a>
-			</div>
-		</div>
-		<div class="footer-link"></div>
-		<div class="footer-info"></div>
-	</div>
+			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
+			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
 	</footer>
 </body>
 </html>

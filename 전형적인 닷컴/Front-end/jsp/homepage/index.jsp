@@ -46,9 +46,9 @@
 		%>
 		
 		<ul class="menu">
-			<li><a href="./index.jsp">전형적인 닷컴</a></li>
+			<li><a id="active" href="./index.jsp">전형적인 닷컴</a></li>
 			<li><a href="../index.jsp">전형적인 API</a></li>
-			<li><a href="#">전체 대학 조회</a></li>
+			<li><a href="./allUniSelect.jsp">전체 대학 조회</a></li>
 			<li><a href="#">성적으로 적절 대학 조회</a></li>
 			<li><a href="#">대학별 전형 조회</a></li>
 		</ul>
@@ -147,18 +147,8 @@
  	-->
 	</section>
 	<footer>
-	<div class="inner-wrap">
-		<div class="footer-util">
-			<div class="tel"></div>
-			<div class="sns-share">
-				<a href="https://hanyang.sen.hs.kr/" target="_blank" title="새창 열기">
-					<i class="iconset ico-hanyang">한양공고 홈페이지</i>
-				</a>
-			</div>
-		</div>
-		<div class="footer-link"></div>
-		<div class="footer-info"></div>
-	</div>
+			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
+			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
 	</footer>
 </body>
 </html>
