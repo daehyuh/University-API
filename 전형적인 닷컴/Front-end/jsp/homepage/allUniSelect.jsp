@@ -75,9 +75,10 @@
 	           		<col>
 	           		<col>
 	            	<col style="width: 150px;">
+	           		<col>
 		        </colgroup>
 				<tbody>
-					<tr class="bg-blue tr">						
+					<tr>						
 						<th scope="row">번호</th>
 						<th scope="row">지역</th>
 						<th scope="row">모집시기</th>
@@ -88,11 +89,10 @@
 						<th scope="row">전형세부</th>
 						<th scope="row">전형명</th>
 						<th scope="row">2023년도 모집인원</th>
+						<th scope="row">분석</th>
 					</tr>
-					<tr class="bg-blue tr">
-						<td>
-							<a href="javascript:location.href='#'">1</a>
-						</td>
+					<tr>
+						<td>1</td>
 						<td>서울</td>
 						<td>수시</td>
 						<td>건국대학교</td>
@@ -102,6 +102,9 @@
 						<td>교과</td>
 						<td>KU지역균형</td>
 						<td>4</td>
+						<td>
+							<button type="button" title="분석" onclick="javascript:location.href='#'">분석</button>
+						</td>
 					</tr>
 				</tbody>
 			</table>
