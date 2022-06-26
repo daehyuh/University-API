@@ -57,3 +57,8 @@ line-height: 100px;
 width:750px;
 margin: auto;
 }
+
+.content-layout{
+    width: 1350px;
+    margin: 0 auto;
+}
