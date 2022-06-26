@@ -34,6 +34,12 @@ h2.tit {
 	text-decoration: underline;
 }
 
+.detail-table tr th{
+	height: 45px;
+    text-align: center;
+    background-color: #1fccab !important;
+}
+
 .detail-table td button{
 	
 }
