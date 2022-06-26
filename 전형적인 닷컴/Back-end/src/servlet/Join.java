@@ -40,7 +40,7 @@ public class Join extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		
 		String id = request.getParameter("um_id");
-		String pwd = request.getParameter("um_password");
+		String pwd = request.getParameter("um_pwd");
 		String name = request.getParameter("um_name");
 
 		try {
