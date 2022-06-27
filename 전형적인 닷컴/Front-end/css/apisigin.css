@@ -185,3 +185,7 @@
 .mt5 {
     margin-top: 5px !important;
 }
+
+.input-util .input-warning {
+    color: #e15d05;
+}
