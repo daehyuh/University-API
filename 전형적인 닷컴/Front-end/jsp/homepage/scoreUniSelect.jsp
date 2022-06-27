@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../css/detail.css">
 <link rel="stylesheet" href="../../css/homepage.css">
+<script src="../../js/check.js"></script>
 <script type="text/javascript">
 $.ajaxSetup({
     scriptCharset: "utf-8",
@@ -22,10 +23,10 @@ $.ajaxSetup({
   $(
   function(){
   
-   $('.button').click(function(){
+   $(".button").click(function(){
            $.ajax({
            method: 'GET',                             
-           url: 'http://전형적인.kro.kr/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
+           url: 'http://API.전형적인.kro.kr/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
            dataType: 'json'                             
        }).done(function (data) {
            console.log(data);
@@ -133,6 +134,7 @@ $.ajaxSetup({
 					성적으로 적절 대학 조회
 				</h2>
 			</div>
+			<form name="scoreForm" id="scoreForm" action="#" method="post">
 			<div class="row-table">
 				<table>
 					<colgroup>
@@ -144,12 +146,19 @@ $.ajaxSetup({
 							<th scope="row">내 등급입력</th>
 							<td>
 								<input type="text" class="input-text w340px" id="score" name="score">
-								<input class="button" type="button" title="조회" value="조회" onclick="#">
+								<input type="button" class="button" value="조회">
+								<!-- 
+								<div class="input-util">
+									<p class="input-warning" style="display: none;" 
+									   id="score_warning">1 ~ 9 사이의 숫자를 넣어주세요</p>
+								</div>
+								 -->
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
+			</form>
 			
 			<table class="detailUni-table">
 			
