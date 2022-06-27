@@ -40,7 +40,7 @@ $.ajaxSetup({
             table+='<td>'+entry['전형명']+'</td>';
             table+='<td>'+entry['학과']+'</td>';
             table+='<td>'+entry['모집인원']+"명"+'</td>';
-            table+='<td>'+'<a href="./subpage.jsp?id='+entry['카운트']+'">분석</td>';
+            table+='<td>'+'<a href="./detailUni.jsp?id='+entry['카운트']+'">분석</td>';
 //            table+='<td>'+entry['2022학년도 경쟁률']+'</td>';
 //            table+='<td>'+entry['2022학년도 평균등급']+'</td>';
             table+='</tr>';
@@ -89,7 +89,6 @@ $.ajaxSetup({
 			<li><a href="./index.jsp">전형적인 닷컴</a></li>
 			<li><a id="active" href="./allUniSelect.jsp">전체 대학 조회</a></li>
 			<li><a href="./scoreUniSelect.jsp">성적으로 적절 대학 조회</a></li>
-			<li><a href="#">대학별 전형 조회</a></li>
 			<li><a href="../index.jsp">전형적인 API</a></li>
 		</ul>
 
@@ -107,13 +106,13 @@ $.ajaxSetup({
 
 
 		        
-			</table>
+		</table>
 		</div>
 	</div>
 	</section>
 	<footer>
 			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
-			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
+			<center>전형적인 API Team</center>
 	</footer>
 </body>
 </html>
