@@ -42,7 +42,7 @@
 					<%
 						}
 					%>
-					<a href="/Logout" title="로그아웃">로그아웃</a> <a href="" title="회원수정">회원수정</a>
+					<a href="/Logout" title="로그아웃">로그아웃</a> <a href="../jsp/userUpdate.jsp" title="회원수정">회원수정</a>
 				</div>
 			</div>
 
@@ -210,7 +210,7 @@
 	</section>
 		<footer>
 			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
-			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
+			<center>전형적인 API Team</center>
 	</footer>
 </body>
 </html>
