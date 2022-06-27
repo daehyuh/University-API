@@ -41,11 +41,11 @@ public class Update extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		
 		String id = request.getParameter("update_id");
-		String pw = request.getParameter("update_pw");
+		String pwd = request.getParameter("update_pwd");
 		String name = request.getParameter("update_name");
 		
 		try{
-			DAO.MemberUpdate(id, pw, name);
+			DAO.MemberUpdate(id, pwd, name);
 			HttpSession session = request.getSession();
 			session.invalidate();
 			response.setCharacterEncoding("UTF-8");
