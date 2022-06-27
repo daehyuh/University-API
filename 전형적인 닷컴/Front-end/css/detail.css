@@ -11,6 +11,10 @@
     border-top: 3px solid #4a63a6;
     min-height: 170px;
 }
+
+#big{
+	font-size: 22px;
+}
 .tit-area {
     position: relative;
     padding: 0;
