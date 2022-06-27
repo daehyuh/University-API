@@ -13,7 +13,6 @@
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../css/detail.css">
 <link rel="stylesheet" href="../../css/homepage.css">
-<script src="../../js/check.js"></script>
 <script type="text/javascript">
 $.ajaxSetup({
     scriptCharset: "utf-8",
