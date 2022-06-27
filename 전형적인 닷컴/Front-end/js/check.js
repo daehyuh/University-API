@@ -62,7 +62,7 @@ function btn_update(){
     const update_name = form.update_name.value;
 
 
-    if(update_pw < 8 || update_pwchk != update_pwd || update_name == ""){
+    if(update_pwd < 8 || update_pwchk != update_pwd || update_name == ""){
 
         if(update_pwd.length < 8 ){
             document.getElementById("pw_warning").style.display="block";
