@@ -1,0 +1,121 @@
+.Detail-title{
+ margin-top: 40px;
+ margin-bottom: 20px;
+}
+.mb-4{margin-bottom: 1.5rem !important;}
+
+.data-set-title {
+    position: relative;
+    padding: 19px 270px 16px 19px;
+    border: 1px solid #e0e0e0;
+    border-top: 3px solid #4a63a6;
+    min-height: 170px;
+}
+
+#big{
+	font-size: 22px;
+}
+.tit-area {
+    position: relative;
+    padding: 0;
+}
+.tit {
+    display: inline-block;
+    margin-top: 5px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: -0.05em;
+    vertical-align: middle;
+}
+.cont {
+    padding: 15px 0;
+}
+
+.data-detail-wrap {
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.data-detail-wrap .title {
+    display: inline-block;
+    font-size: 16px;
+}
+.data-detail-wrap .option-btns {
+    display: inline-block;
+    float: right;
+}
+.tagset {display:inline-block; min-width:44px; height:24px; padding:0 5px; color:#333; font-size:0.8571em; font-weight:700; line-height:23px; text-align:center; vertical-align:middle;}
+.tagset.csv {color:#fff; background-color:#1076a1;}
+.tagset.json {
+    color: #fff;
+    background-color: #0a7e88;
+}
+
+.data-detail-wrap .option-btns > .button {
+    line-height: initial;
+    height: initial;
+    padding: 4px 8px;
+    font-weight: normal;
+}
+
+.button, a.button {
+    overflow: hidden;
+    display: inline-block;
+    min-width: 100px;
+    height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 37px;
+    color: #fff;
+    font-family: 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    border: 1px solid #3671c8;
+    border-radius: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: #3671c8;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: 2rem !important;
+}
+
+.detail-table {
+	margin-bottom: 40px;
+}
+.detail-table tr th{
+	height: 45px;
+    text-align: center;
+    background-color: #70aeff60;
+}
+
+.detail-table td{
+	text-align: left !important;
+}
+
+.detail-table tr th, .detail-table tr td {
+    height: 45px;
+    padding: 2px 15px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+.detailUni-table tr th, .detailUni-table tr td {
+    height: 45px;
+    padding: 2px 15px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
