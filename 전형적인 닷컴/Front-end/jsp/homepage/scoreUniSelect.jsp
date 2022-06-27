@@ -97,7 +97,7 @@ $.ajaxSetup({
 		%>
 		<div class="util">
 			<div class="login">
-				<a href="../jsp/login.jsp" title="로그인 이동">로그인</a> <a href="join.jsp"
+				<a href="../login.jsp" title="로그인 이동">로그인</a> <a href="../join.jsp"
 					title="회원가입 이동">회원가입</a>
 			</div>
 		</div>
