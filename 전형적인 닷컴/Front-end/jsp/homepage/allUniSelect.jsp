@@ -23,7 +23,7 @@ $.ajaxSetup({
   function(){
             $.ajax({
             method: 'GET',
-            url: 'http://전형적인.kro.kr/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
+            url: 'http://API.전형적인.kro.kr/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
             dataType: 'json'
         }).done(function (data) {
             console.log(data);
