@@ -69,7 +69,7 @@
 		
 		</div>
 		<div id="big">
-			http://API.전형적인.kro.kr/Api?apikey=(발급받은 키)
+			http://API.전형적인.kro.kr/Api?apikey=발급받은 키
 		</div>
 	</div>
 	
