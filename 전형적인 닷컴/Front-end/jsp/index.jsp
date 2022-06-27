@@ -140,14 +140,14 @@
 	</ul>
 	
 	<div class="btm_btn">
-		<a title="인증 키 요청하기" href="/apisigin.jsp">인증 키 요청하기</a>
+		<a title="인증 키 요청하기" href="./apisigin.jsp">인증 키 요청하기</a>
 	</div>
 
 
 	</section>
 	<footer>
 			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
-			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
+			<center>전형적인 API Team</center>
 	</footer>
 </body>
 </html>
