@@ -87,10 +87,10 @@ $.ajaxSetup({
 		
 		<ul class="menu">
 			<li><a href="./index.jsp">전형적인 닷컴</a></li>
-			<li><a href="../index.jsp">전형적인 API</a></li>
-			<li><a href="./allUniSelect.jsp">전체 대학 조회</a></li>
+			<li><a id="active" href="./allUniSelect.jsp">전체 대학 조회</a></li>
 			<li><a href="./scoreUniSelect.jsp">성적으로 적절 대학 조회</a></li>
 			<li><a href="#">대학별 전형 조회</a></li>
+			<li><a href="../index.jsp">전형적인 API</a></li>
 		</ul>
 
 	</div>
