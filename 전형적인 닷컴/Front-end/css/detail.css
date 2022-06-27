@@ -104,3 +104,14 @@
     border-top: 1px solid gray;
     border-left: 1px solid gray;
 }
+
+.detailUni-table tr th, .detailUni-table tr td {
+    height: 45px;
+    padding: 2px 15px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
