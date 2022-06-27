@@ -98,6 +98,7 @@ header .util .login a {
     font-weight: bold;
 }
 
+
 header .util .login a:hover {
     text-decoration: underline;
     font-weight: bold;
@@ -283,8 +284,6 @@ section{
     float: left;
     color: #e15d05;
 }
-
-
 
 
 
@@ -542,6 +541,7 @@ tr {
 }
 
 footer{
+	margin-top:100px;
 	position: relative;
     height: 130px;
     color: #fff;
