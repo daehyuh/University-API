@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hanyang.api.dao.UnitypeDao">
+	<select id="SelectApikey" resultType="UniMemberVO">
+		SELECT UM_APIKEY FROM UNI_MEMBER
+	</select>
+<!--<select id="SelectAll" resultType="UnitypeVO">
+		SELECT * FROM UNI_TYPE
+	</select>-->
+	<select id="SelectByName" parameterType="String"
+		resultType="UnitypeVO">
+		SELECT * FROM UNI_TYPE WHERE UNI_NAME LIKE '%${name}%' OR
+		UNI_NAME = #{name}
+	</select>
+	<select id="SelectByRecruit" parameterType="String"
+		resultType="UnitypeVO">
+		SELECT * FROM UNI_TYPE WHERE UNI_RECRUITMENT LIKE
+		'%${recruit}%' OR UNI_RECRUITMENT = #{recruit}
+	</select>
+	<select id="SelectByDepart" parameterType="String"
+		resultType="UnitypeVO">
+		SELECT * FROM UNI_TYPE WHERE UNI_DEPARTMENT LIKE
+		'%${depart}%' OR UNI_DEPARTMENT = #{depart}
+	</select>
+	<select id="SelectBySelection" parameterType="String"
+		resultType="UnitypeVO">
+		SELECT * FROM UNI_TYPE WHERE UNI_SELECTION LIKE
+		'%${selection}%' OR UNI_SELECTION = #{selection}
+	</select>
+	<select id="SelectBySelection_Type" parameterType="String"
+		resultType="UnitypeVO">
+		SELECT * FROM UNI_TYPE WHERE UNI_SELECTION_TYPE LIKE
+		'%${selection_type}%' OR UNI_SELECTION_TYPE = #{selection_type}
+	</select>
+	<select id="SelectBySelection_Name" parameterType="String"
+		resultType="UnitypeVO">
+		SELECT * FROM UNI_TYPE WHERE UNI_SELECTION_NAME LIKE
+		'%${selection_name}%' OR UNI_SELECTION_NAME = #{selection_name}
+	</select>
+	<select id="SelectAllByApiKey" parameterType="String"
+		resultType="UnitypeVO">
+		SELECT U.* FROM UNI_TYPE U, UNI_MEMBER M WHERE M.UM_APIKEY = #{apikey}
+	</select>
+	
+</mapper>
