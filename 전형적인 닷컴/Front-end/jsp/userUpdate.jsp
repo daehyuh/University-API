@@ -155,7 +155,7 @@
 	</section>
 	<footer>
 			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
-			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
+			<center>전형적인 API Team</center>
 	</footer>
 </body>
 </html>
