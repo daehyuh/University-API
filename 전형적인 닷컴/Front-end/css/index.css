@@ -94,7 +94,7 @@ header .util .login a {
 }
 #active{
     color: ghostwhite;
-	font-size: 25px;
+	font-size: 20px;
     font-weight: bold;
 }
 
@@ -136,7 +136,6 @@ header .menu a{
 
 header .menu a:hover{
     color: slategrey;
-    font-size: 25px;
     font-weight: bold;
 }
 
@@ -500,7 +499,7 @@ tr {
 }
 
 .btn-group {
-    margin: 30px 0 0 0;
+    margin: 30px 0 30px 0;
     text-align: center !important;
 }
 
