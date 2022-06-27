@@ -38,11 +38,26 @@ h2.tit {
 .detail-table tr th{
 	height: 45px;
     text-align: center;
-    background-color: #1fccab !important;
+    background-color: #1fccab;
 }
 
-.detail-table td button{
-	
+.detailUni-table td{
+	text-align: center !important;
+}
+
+.detailUni-table td a{
+	text-decoration: none;
+}
+
+.detailUni-table td a:hover{
+	color: #19ce60;
+	text-decoration: underline;
+}
+
+.detailUni-table tr th{
+	height: 45px;
+    text-align: center;
+    background-color: #1fccab;
 }
 
 footer{
@@ -61,4 +76,41 @@ margin: auto;
 .content-layout{
     width: 1350px;
     margin: 0 auto;
+}
+
+.button {
+	overflow: hidden;
+    display: inline-block;
+    min-width: 100px;
+    height: 42px;
+    margin: 0;
+    padding: 0 10px;
+    line-height: 37px;
+    color: #fff;
+    font-family: 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    border: 1px solid #3671c8;
+    border-radius: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: grey;
+}
+
+.button:hover {
+    background-color: silver;
+}
+
+.tr-blue{
+	background-color: 9AEFE4;	
+}
+
+.bed{
+	color: #ff4040;
+}
+
+.good{
+	color: #0080ff;
 }
