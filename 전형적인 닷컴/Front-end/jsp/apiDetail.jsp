@@ -79,7 +79,7 @@
 		<div class="title">전형적인 API 대학 전형 데이터 다운로드</div>
 
 		<div class="option-btns">
-			<a href="../jsp/converter.csv" onclick="alert('CSV 파일 다운로드 시작')" class="button" title="파일 다운로드"> 다운로드 </a>
+			<a href="../jsp/data.csv" onclick="alert('CSV 파일 다운로드 시작')" class="button" title="파일 다운로드"> 다운로드 </a>
 		</div>
 	</div>
 
@@ -149,7 +149,7 @@
 	</section>
 	<footer>
 			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>
-			<center>한양공업고등학교 3학년 B반 전형적인 API Team</center>
+			<center>전형적인 API Team</center>
 	</footer>
 </body>
 </html>
