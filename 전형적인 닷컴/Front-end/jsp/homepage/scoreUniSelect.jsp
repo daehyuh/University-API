@@ -24,7 +24,7 @@ $.ajaxSetup({
   function(){
             $.ajax({
             method: 'GET',
-            url: 'http://124.49.255.184:8000/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
+            url: 'http://124.49.255.184/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
             dataType: 'json'
         }).done(function (data) {
             console.log(data);
@@ -59,32 +59,6 @@ $.ajaxSetup({
 		<div class="logo">
 			<a href="./index.jsp" title="홈페이지 바로가기"><img alt="" src="../../image/image3.png"></a>
 		</div>
-		<%
-			Entity login = (Entity) session.getAttribute("LOGIN");
-		%>
-		<%
-			if (login == null) {
-		%>
-		<div class="util">
-			<div class="login">
-				<a href="../login.jsp" title="로그인 이동">로그인</a> <a href="../join.jsp"
-					title="회원가입 이동">회원가입</a>
-			</div>
-		</div>
-		<%
-			} else {
-		%>
-
-		<div class="util">
-			<div class="login">
-				<a><%=login.getUM_NAME()%>님</a> <a href="/Logout" title="로그아웃">로그아웃</a>
-			 <a href="../userUpdate.jsp" title="회원수정">회원수정</a>
-			</div>
-		</div>
-
-		<%
-			}
-		%>
 		
 		<ul class="menu">
 			<li><a href="./index.jsp">전형적인 닷컴</a></li>
@@ -113,6 +87,9 @@ $.ajaxSetup({
 					<tbody>
 						<tr>
 							<th scope="row">내 등급입력</th>
+							<td>
+								<input type="text" class="input-text w340px">
+							</td>
 						</tr>
 					</tbody>
 				</table>
