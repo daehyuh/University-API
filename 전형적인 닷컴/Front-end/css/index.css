@@ -98,10 +98,8 @@ header .util .login a {
     font-weight: bold;
 }
 
-
 header .util .login a:hover {
     text-decoration: underline;
-    font-size: 25px;
     font-weight: bold;
 }
 
