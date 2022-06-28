@@ -155,3 +155,12 @@ function api_checkbox(obj, keyCode){
         document.getElementById("license_warning").style.display="none";
     }
 }
+
+function score_check(obj){
+	
+	if(obj.value < 1 || obj.value > 9){
+		document.getElementById("score_warning").style.display="block";
+	} else{
+		document.getElementById("score_warning").style.display="none";
+	}
+}
