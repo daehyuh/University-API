@@ -49,7 +49,7 @@
 				<li><a href="../jsp/apiDetail.jsp">전형적인 API 데이터 상세</a></li>
 				<li><a href="../jsp/apisigin.jsp">API 인증키 신청</a></li>
 				<li><a id="active" href="../jsp/apiKeyCheck.jsp">인증키 확인</a></li>
-				<li><a href="./homepage/index.jsp">API 활용 예시</a></li>
+				<li><a href="../jsp/homepage/index.jsp">API 활용 예시</a></li>
 			</ul>
 
 		</div>
