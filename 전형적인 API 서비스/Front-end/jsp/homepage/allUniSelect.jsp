@@ -14,6 +14,38 @@
 <link rel="stylesheet" href="../../css/detail.css">
 <link rel="stylesheet" href="../../css/homepage.css">
    <script>
+   var sortType = 'asc';
+
+   function sortContent(index) {
+   	
+       var table = document.getElementsByTagName('table');
+
+       sortType = (sortType =='asc')?'desc' : 'asc';
+
+       var checkSort = true;
+       var rows = table[0].rows;
+
+       while (checkSort) { // 현재와 다음만 비교하기때문에 위치변경되면 다시 정렬해준다.
+           checkSort = false;
+
+           for (var i = 1; i < (rows.length - 1); i++) {
+               var fCell = rows[i].cells[index].innerHTML.toUpperCase();
+               var sCell = rows[i + 1].cells[index].innerHTML.toUpperCase();
+
+               var row = rows[i];
+
+               // 오름차순<->내림차순 ( 이부분이 이해 잘안됬는데 오름차순이면 >, 내림차순이면 <
+               //                        이고 if문의 내용은 동일하다 )
+               if ( (sortType == 'asc' && fCell > sCell) || 
+                       (sortType == 'desc' && fCell < sCell) ) {
+
+                   row.parentNode.insertBefore(row.nextSibling, row);
+                   checkSort = true;
+               }
+           }
+       }
+   }
+   
 $.ajaxSetup({
     scriptCharset: "utf-8",
     contentType: "application/json; charset=utf-8"
@@ -27,8 +59,22 @@ $.ajaxSetup({
             dataType: 'json'
         }).done(function (data) {
             console.log(data);
-            var table="<colgroup><col><col><col><col style='width: 110px;'><col><col><col style='width: 130px;'><col style='width: 270px;'><col style='width: 220px;'><col style='width: 90px;'></colgroup><tbody><tr><th scope='row'>번호</th><th scope='row'>지역</th><th scope='row'>모집시기</th><th scope='row'>대학이름</th><th scope='row'>본교/분교</th><th scope='row'>종합교과</th><th scope='row'>전형유형</th><th scope='row'>전형명</th><th scope='row'>학과</th><th scope='row'>2023년도 모집인원</th><th scope='row'>분석</th></tr>";
-        $.each(data, function(index, entry){
+            var table="<colgroup><col><col><col><col style='width: 110px;'><col><col><col style='width: 130px;'><col style='width: 270px;'><col style='width: 220px;'><col style='width: 90px;'></colgroup><tbody>";
+            	table+="<tr>";
+            	table+="<th scope='row' onclick='sortTable(0)'>번호</th>";
+            	table+="<th scope='row' onclick='sortContent(1)' >지역</th>";
+          		table+="<th scope='row' onclick='sortContent(2)'>모집시기</th>";
+       			table+="<th scope='row' onclick='sortContent(3)'>대학이름</th>";
+   				table+="<th scope='row' onclick='sortContent(4)'>본교/분교</th>";
+				table+="<th scope='row' onclick='sortContent(5)'>종합교과</th>";
+				table+="<th scope='row' onclick='sortContent(6)'>전형유형</th>";
+				table+="<th scope='row' onclick='sortContent(7)'>전형명</th>";
+				table+="<th scope='row' onclick='sortContent(8)'>학과</th>";
+				table+="<th scope='row' onclick='sortContent(9)'>2023년도 모집인원</th>";
+				table+="<th scope='row'>분석</th>";
+				table+="</tr>";
+        
+         $.each(data, function(index, entry){
         	table+='<tr>';
             table+='<td>'+entry['카운트']+'</td>';
             table+='<td>'+entry['지역']+'</td>';
@@ -102,7 +148,7 @@ $.ajaxSetup({
 					전체 대학 조회
 				</h2>
 			</div>
-		<table class="detail-table">
+		<table class="detail-table" name="detail-table">
 
 
 		        
