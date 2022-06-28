@@ -157,7 +157,7 @@ $.ajaxSetup({
 								<input type="button" class="button" value="조회">
 								<div class="input-util">
 									<p class="input-warning" style="display: none;" 
-									   id="score_warning">1 ~ 9 사이의 숫자를 넣어주세요</p>
+									   id="score_warning">1 ~ 9 사이의 등급을 입력해주세요</p>
 								</div>
 							</td>
 						</tr>
