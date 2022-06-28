@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../css/detail.css">
 <link rel="stylesheet" href="../../css/homepage.css">
+<script src="../../js/check.js"></script>
 <script type="text/javascript">
 $.ajaxSetup({
     scriptCharset: "utf-8",
@@ -23,6 +24,14 @@ $.ajaxSetup({
   function(){
   
    $(".button").click(function(){
+	  	   const score = $("#score").val();
+	  	   if(score == "" || score == null){
+	  		   alert("공백은 조회할 수 없습니다");
+	  		   return;
+	  	   }
+	  	   if(score < 1 || score > 9){
+	  		   return;
+	  	   }
            $.ajax({
            method: 'GET',                             
            url: 'http://API.전형적인.kro.kr/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
@@ -144,14 +153,12 @@ $.ajaxSetup({
 						<tr>
 							<th scope="row">내 등급입력</th>
 							<td>
-								<input type="text" class="input-text w340px" id="score" name="score">
+								<input onchange="score_check(this)" type="text" class="input-text w340px" id="score" name="score">
 								<input type="button" class="button" value="조회">
-								<!-- 
 								<div class="input-util">
 									<p class="input-warning" style="display: none;" 
 									   id="score_warning">1 ~ 9 사이의 숫자를 넣어주세요</p>
 								</div>
-								 -->
 							</td>
 						</tr>
 					</tbody>
