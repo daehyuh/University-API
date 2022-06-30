@@ -57,7 +57,7 @@ $(
   function(){
             $.ajax({
             method: 'GET',
-            url: 'http://124.49.255.184/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
+            url: 'http://API.전형적인.kro.kr/Api?apikey=a8cabf7c-93b2-427c-8cf1-9aca3de359cd',
             dataType: 'json'
         }).done(function (data) {
             console.log(data);
@@ -130,7 +130,7 @@ $(
 		<ul class="menu">
 			<li><a href="./index.jsp">전형적인 닷컴</a></li>
 			<li><a href="./allUniSelect.jsp">전체 대학 조회</a></li>
-			<li><a id="active" href="./scoreUniSelect.jsp">성적으로 적절 대학 조회</a></li>
+			<li><a href="./scoreUniSelect.jsp">적절 대학 조회</a></li>
 			<li><a href="../index.jsp">전형적인 API</a></li>
 		</ul>
 

@@ -33,7 +33,7 @@
 		<%
 			} else {
 		%>
-
+		
 		<div class="util">
 			<div class="login">
 				<a><%=login.getUM_NAME()%>님</a> <a href="/Logout" title="로그아웃">로그아웃</a>
@@ -48,7 +48,7 @@
 		<ul class="menu">
 			<li><a id="active" href="./index.jsp">전형적인 닷컴</a></li>
 			<li><a href="./allUniSelect.jsp">전체 대학 조회</a></li>
-			<li><a href="./scoreUniSelect.jsp">성적으로 적절 대학 조회</a></li>
+			<li><a href="./scoreUniSelect.jsp">적절 대학 조회</a></li>
 			<li><a href="../index.jsp">전형적인 API</a></li>
 		</ul>
 

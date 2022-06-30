@@ -45,10 +45,10 @@
 		%>
 
 		<ul class="menu">
-			<li><a href="../jsp/index.jsp">전형적인 API</a></li>
-			<li><a id="active" href="../jsp/apiDetail.jsp">전형적인 API 데이터 상세</a></li>
+			<li><a id="active" href="../jsp/index.jsp">전형적인 API</a></li>
+			<li><a href="../jsp/apiDetail.jsp">API 데이터 상세</a></li>
 			<li><a href="../jsp/apisigin.jsp">API 인증키 신청</a></li>
-			<li><a href="../jsp/apiKeyCheck.jsp">인증키 확인</a></li>
+			<li><a href="../jsp/apiKeyCheck.jsp">API 인증키 확인</a></li>
 			<li><a href="../jsp/homepage/index.jsp">API 활용 예시</a></li>
 		</ul>
 
@@ -66,11 +66,8 @@
 		<div class="cont">
 		전형적인 API의  CSV 데이터 파일 , API를 제공합니다.<br><br>
 		대학이름, 본분교, 지역, 모집시기, 학과, 전형유형, 전형세부, 전형명, 2023년도 모집인원, 2022학년도 경쟁률, 2022학년도 평균등급
+		</div>
 		
-		</div>
-		<div id="big">
-			http://API.전형적인.kro.kr/Api?apikey=발급받은 키
-		</div>
 	</div>
 	
 	
@@ -148,6 +145,19 @@
                     <td>이용허락범위 제한 없음</td>
                 </tr>
     	</table>
+    	
+    	
+    	        <table class="detail-table">
+            	<colgroup>
+            		<col style="width: 350px;">
+            		<col>
+            	</colgroup>
+                <tr>
+                    <th scope="row">URL API 호출</th>
+                    <td>http://API.전형적인.kro.kr/Api?apikey=(발급받은 키)</td>
+                </tr>
+                </table>
+    	
 	</section>
 	<footer>
 			<h1>Copyright 2022. 전형적인 API. ALL RIGHTS RESERVED.</h1>

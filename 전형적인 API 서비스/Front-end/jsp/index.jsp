@@ -46,9 +46,9 @@
 		
 		<ul class="menu">
 			<li><a id="active" href="../jsp/index.jsp">전형적인 API</a></li>
-			<li><a href="../jsp/apiDetail.jsp">전형적인 API 데이터 상세</a></li>
+			<li><a href="../jsp/apiDetail.jsp">API 데이터 상세</a></li>
 			<li><a href="../jsp/apisigin.jsp">API 인증키 신청</a></li>
-			<li><a href="../jsp/apiKeyCheck.jsp">인증키 확인</a></li>
+			<li><a href="../jsp/apiKeyCheck.jsp">API 인증키 확인</a></li>
 			<li><a href="../jsp/homepage/index.jsp">API 활용 예시</a></li>
 		</ul>
 
@@ -97,19 +97,21 @@
 
 
 	<ul class="step_box">
-		<li>
+	
+				<li>
 			<div class="step_sub">
 				<div class="step_tit">01</div>
 				<div class="step_txt">
-					<span>사이트 회원가입</span>아이디, 비밀번호, 닉네임
+					<span>전형적인 API 접속</span>전형적인.kro.kr
 				</div>
 			</div>
 		</li>
+	
 		<li>
 			<div class="step_sub">
 				<div class="step_tit">02</div>
 				<div class="step_txt">
-					<span>API 인증키 신청하기</span>API 인증키 신청
+					<span>전형적인 API 로그인</span>상단바에서 회원가입후<br> 로그인
 				</div>
 			</div>
 		</li>
@@ -117,7 +119,7 @@
 			<div class="step_sub">
 				<div class="step_tit">03</div>
 				<div class="step_txt">
-					<span>API 인증키 확인</span>마이페이지에서 발급받은 인증키 확인
+					<span>API 인증키 신청하기</span>API 인증키 신청
 				</div>
 			</div>
 		</li>
@@ -125,7 +127,7 @@
 			<div class="step_sub">
 				<div class="step_tit">04</div>
 				<div class="step_txt">
-					<span>API 데이터 상세확인</span> 전형적인 API 데이터 상세에서 API 사용법 확인
+					<span>API 인증키 확인</span>마이페이지에서<br> 발급받은 인증키 확인
 				</div>
 			</div>
 		</li>
@@ -133,7 +135,7 @@
 			<div class="step_sub">
 				<div class="step_tit">05</div>
 				<div class="step_txt">
-					해당 기관 서비스 등록<br>진행 및 연결
+					<span>API 데이터 상세확인</span>전형적인 API 데이터 상세에서<br> API 사용법 확인
 				</div>
 			</div>
 		</li>
