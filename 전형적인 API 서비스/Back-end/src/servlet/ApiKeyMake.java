@@ -52,7 +52,7 @@ public class ApiKeyMake extends HttpServlet {
 			PrintWriter out = response.getWriter();
 			out.print("<script>");
 			out.print("alert('인증키가 생성됬습니다.');");
-			out.print("location.href='../jsp/apiKeyCheck.jsp';"); // 로케이션 처리
+			out.print("location.href='/ApiKeySelect?um_id="+id+"';"); // 로케이션 처리
 			out.print("</script>");
 			out.close();
 		} catch(Exception e){

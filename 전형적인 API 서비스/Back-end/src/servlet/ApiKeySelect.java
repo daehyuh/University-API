@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.DAO;
 import entity.Entity;
@@ -37,15 +38,16 @@ public class ApiKeySelect extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		
 		String id = request.getParameter("um_id");
-				
-		List<Entity> ApiList = new ArrayList<Entity>();
-		ApiList = DAO.UUIDSelect(id);
-		
-		request.setAttribute("apikey", ApiList);
+		Entity entity =  DAO.MemberSelectById(id);
+
+		HttpSession session = request.getSession();
+		session.setAttribute("LOGIN", entity);
 		
 		ServletContext context = getServletContext();
-		RequestDispatcher dispatcher = context.getRequestDispatcher("../jsp/index.jsp"); // 디스패쳐 처리
+		RequestDispatcher dispatcher = context
+				.getRequestDispatcher("/jsp/apiKeyCheck.jsp"); // 디스패쳐 처리
 		dispatcher.forward(request, response);
+		
 	}
 
 	/**
