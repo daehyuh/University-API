@@ -70,10 +70,10 @@ $.ajaxSetup({
          
     	 if (calcscore > 0 &&  calcscore < 1) {
     		 evaluation = '상향 (▲'+calcscore+')';
-    		 table+="<td class ='bed'>"+evaluation+'</td>';
+    		 table+="<td class ='bad'>"+evaluation+'</td>';
     	 } else if (calcscore >= 1 ) {
     		 evaluation = '과도 상향 (▲'+calcscore+')';
-    		 table+="<td class ='bed'>"+evaluation+'</td>';
+    		 table+="<td class ='bad'>"+evaluation+'</td>';
     	 } else if(calcscore <= 0 && calcscore > -1 ) {
     		 evaluation = '하향 (▼'+calcscore+')';
     		 table+="<td class ='good'>"+evaluation+'</td>';
@@ -159,6 +159,26 @@ $.ajaxSetup({
 									<p class="input-warning" style="display: none;" 
 									   id="score_warning">1 ~ 9 사이의 등급을 입력해주세요</p>
 								</div>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<td>과도상향</td>
+										<td class="bad">+1.0 ~ </td>
+									</tr>
+									<tr>
+										<td>상향</td>
+										<td class="bad">+0.1 ~ +0.9</td>
+									</tr>
+									<tr>
+										<td>하향</td>
+										<td class="good">0 ~ -0.9</td>
+									</tr>
+									<tr>
+										<td>과도하향</td>
+										<td class="good">-1.0 ~ </td>
+									</tr>
+								</table>
 							</td>
 						</tr>
 					</tbody>
