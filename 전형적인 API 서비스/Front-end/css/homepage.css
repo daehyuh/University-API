@@ -107,10 +107,14 @@ margin: auto;
 	background-color: 9AEFE4;	
 }
 
-.bed{
+.bad{
 	color: #ff4040;
 }
 
 .good{
 	color: #0080ff;
+}
+
+.row-table table td {
+    padding: 10px 10px 10px 20px;
 }
