@@ -1,10 +1,11 @@
 # Hanyang University-API Project - 전형적인 API 프로젝트
 
-> ## 2022년도 한양공업고등학교 컴퓨터네트워크과 3학년 B반
+## 2022년도 한양공업고등학교 컴퓨터네트워크과 3학년 B반
 
 
-> > ## 전형적인 API 서비스 Spring Boot API 파일
-> > ## 전형적인 API 사이트 파일
+전형적인 API 서비스 Spring Boot API
+
+전형적인 API 사이트
 
 
 
